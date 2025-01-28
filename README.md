@@ -12,7 +12,7 @@ IfIGone es una aplicación diseñada para enviar un mensaje importante por corre
 La imagen de Docker está disponible como un archivo `.tar` en la sección de *releases* de este repositorio.
 
 1. **Descarga la imagen**:
-   - Accede a la sección de [Releases](https://github.com/tu-repo/repo/releases).
+   - Accede a la sección de [Releases](https://github.com/Wonsycc/If-I-Gone/releases/tag/v1.0.0).
    - Descarga el archivo `if-i-gone.tar`.
 
 2. **Importa la imagen en Docker**:
