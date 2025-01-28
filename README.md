@@ -52,8 +52,9 @@ services:
       - EMAIL_SUBJECT=Mensaje importante
       - EMAIL_MESSAGE=Este es un mensaje importante que se envía porque no se recibió una petición en el tiempo establecido.
       - INTERVALO_MS=15768000000 # medio año en milisegundos
+```
 
-## Pasos para Ejecutar
+### Pasos para Ejecutar
 
 1. **Editar las variables de entorno**:
    - Modifica el archivo `docker-compose.yml` para incluir tus valores personalizados:
