@@ -13,13 +13,13 @@ La imagen de Docker está disponible como un archivo `.tar` en la sección de *r
 
 1. **Descarga la imagen**:
    - Accede a la sección de [Releases](https://github.com/tu-repo/repo/releases).
-   - Descarga el archivo `if-i-gone-02.tar`.
+   - Descarga el archivo `if-i-gone.tar`.
 
 2. **Importa la imagen en Docker**:
    - Abre una terminal y navega al directorio donde descargaste el archivo `.tar`.
    - Carga la imagen ejecutando:
      ```bash
-     docker load -i if-i-gone-02.tar
+     docker load -i if-i-gone.tar
      ```
    - Verifica la importación con:
      ```bash
@@ -28,7 +28,7 @@ La imagen de Docker está disponible como un archivo `.tar` en la sección de *r
      Salida esperada:
      ```
      REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
-     if-i-gone     02        <IMAGE_ID>     X hours ago    XXXMB
+     if-i-gone     01        <IMAGE_ID>     X hours ago    XXXMB
      ```
 
 ## Configuración y Ejecución con Docker Compose
@@ -40,7 +40,7 @@ version: '3.8'
 
 services:
   if-i-gone:
-    image: if-i-gone:02
+    image: if-i-gone:01
     ports:
       - "3000:3000"
     environment:
@@ -81,7 +81,7 @@ services:
    - La salida esperada incluirá una línea similar a:
      ```
      CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                    NAMES
-     <CONTAINER_ID> if-i-gone:02   "docker-entrypoint.s…"   X seconds ago   Up X seconds   0.0.0.0:3000->3000/tcp   if-i-gone
+     <CONTAINER_ID> if-i-gone:01   "docker-entrypoint.s…"   X seconds ago   Up X seconds   0.0.0.0:3000->3000/tcp   if-i-gone
      ```
 
 4. **Realizar una petición al servidor**:
