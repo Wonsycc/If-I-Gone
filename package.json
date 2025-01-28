@@ -1,0 +1,16 @@
+{
+  "name": "ifigone",
+  "version": "1.0.0",
+  "description": "Aplicación para enviar un mensaje importante en caso de que no se reciba una petición en un período de tiempo determinado.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.0"
+  },
+  "author": "Alfonso Calvo Cristobal",
+  "license": "ISC"
+  
+}
